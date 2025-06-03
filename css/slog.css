@@ -1,0 +1,201 @@
+/* Reset & Base */
+* { box-sizing: border-box; }
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #eaeaea url('/slike/13338.jpg') repeat;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+html { scroll-behavior: smooth; }
+ul, ol { margin-left: 30px; color: #333; font-style: italic; }
+ul li { list-style: square; }
+a { color: #007bff; text-decoration: none; transition: .3s; }
+a:hover { color: #ff6600; text-decoration: underline; }
+
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    padding: 18px 25px;
+}
+.navbar-brand { padding: 5px 15px; transition: .3s; }
+.navbar-brand img { height: 40px; margin: 5px 0 0 10px; }
+
+/* Dropdown */
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+}
+.navbar-nav li.dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu>li>a {
+    color: #1a1a1a !important;
+    padding: 12px 20px;
+}
+
+/* Tables & Wheel Table */
+.wheel-table {
+    width: 60vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-collapse: separate;
+    border-spacing: 20px;
+    text-align: center;
+}
+.wheel-table td {
+    padding: 0;
+    width: 33.33vw;
+    transition: .3s;
+}
+.image-box {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    transition: .3s;
+    box-shadow: 0 8px 32px #0001;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 0 4px 20px #0001;
+}
+.wheel-table td:hover .image-box {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #ff6b3520;
+    border-color: #ff6b35;
+}
+.wheel-table td:hover .image-box img {
+    transform: scale(1.03);
+}
+
+/* Forms */
+.form-control {
+    border: 2px solid #ff6b3533;
+    border-radius: 8px;
+    padding: 12px 15px;
+    background: rgba(255,255,255,.9);
+    font-size: 16px;
+}
+
+/* Dodaj to izjemo za select */
+select.form-control {
+    background: #fff !important;
+    color: #1a1a1a !important;
+}
+
+/* Button */
+.btn-primary {
+    background: linear-gradient(135deg, #ff6b35, #e74c3c);
+    border: none;
+    transition: .3s;
+}
+
+/* Maintenance */
+.vzdrzevanje {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px #0001;
+    border: 2px solid transparent;
+}
+.vzdrzevanje:hover { border-color: #ff6b3550; }
+.vzdrzevanje h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6b35;
+}
+.vzdrzevanje p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.vzdrzevanje img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px #0001;
+    transition: .3s;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+footer a {
+    color: #ff6b35;
+    margin: 0 15px;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px #0001;
+    margin-bottom: 40px;
+}
+
+/* Gallery */
+#nasi-ponudniki .table td img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #0001;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+#nasi-ponudniki .table td img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px #ff6b3520;
+    border: 2px solid #ff6b35;
+}
+
+select,
+select.form-control {
+    color: #1a1a1a;
+    background: #fff;
+    border: 2px solid #ff6b3533;
+    border-radius: 8px;    /* večji padding */
+    font-size: 15px;         /* večja pisava */
+    font-family: inherit;
+    min-height: 56px;        /* večja višina */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+option {
+    background: #fff;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    section h1 { font-size: 32px; }
+    section h2 { font-size: 24px; }
+    .wheel-table, .wheel-table tbody, .wheel-table tr, .wheel-table td { display: block; width: 100%; }
+    .wheel-table td { margin-bottom: 20px; }
+}

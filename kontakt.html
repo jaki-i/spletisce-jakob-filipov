@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BBS platišča, vrhunska izbira za športne in klasične avtomobile.">
+    <meta name="keywords" content="platišča, avtomobili, BBS, HRE, OZ, Weld">
+    <meta name="author" content="Jakob Filipov">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FilipovRims | Kontakt</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slog.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meni">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="slike/logo fr.png" alt="FilipovRims" class="img-fluid">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="meni">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Domov</a></li>
+
+						<li class="dropdown">
+							<a href="ponudniki.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+								Ponudniki <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="hre.html">HRE Wheels</a></li>
+								<li><a href="bbs.html">BBS</a></li>
+								<li><a href="weld.html">WELD</a></li>
+                                <li><a href="oz.html">OZ Racing</a></li>
+							</ul>
+						</li>
+						<li><a href="galerija.html">Galerija</a></li>
+						<li><a href="vzdrzevanje.html">Vzdrževanje</a></li>
+						<li class="active"><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>		
+		</nav>
+	</header>
+
+    <div class="container">
+        <h1>Kontaktiraj nas</h1>
+        <p>Za povpraševanja, naročila ali dodatna vprašanja nas lahko kontaktirate preko spodnjega obrazca.</p>
+
+        <form action="mailto:tvoj-email@example.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="ime">Ime in Priimek:</label>
+                <input type="text" class="form-control" id="ime" name="ime" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email naslov:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="izbira">Izberi temo:</label>
+                <select class="form-control" id="izbira" name="izbira">
+                    <option value="splošno">Splošno</option>
+                    <option value="naročilo">Naročilo</option>
+                    <option value="pohvala">Pohvala</option>
+                    <option value="pritožba">Pritožba</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="datum">Datum:</label>
+                <input type="date" class="form-control" id="datum" name="datum">
+            </div>
+            <div class="form-group">
+                <label for="posta">Poštna številka:</label>
+                <input type="text" class="form-control" id="posta" name="posta" pattern="[0-9]{4}">
+            </div>
+            <div class="form-group">
+                <label for="telefon">Telefon:</label>
+                <input type="tel" class="form-control" id="telefon" name="telefon">
+            </div>
+            <div class="form-group">
+                <label for="sporocilo">Sporočilo:</label>
+                <textarea class="form-control" id="sporocilo" name="sporocilo" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Pošlji sporočilo</button>
+        </form>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>&copy; 2025 FilipovRims | Vse Pravice Pridržane</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
